@@ -1,0 +1,1 @@
+<resources><declare-styleable name="VectorMasterView"><attr format="reference" name="vector_src" /><attr format="boolean" name="use_legacy_parser" /></declare-styleable><string name="app_name">VectorMaster</string></resources>

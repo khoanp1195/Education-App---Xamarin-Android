@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!--For all properties see: https://aka.ms/android-menu-resource-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<group>
+		<item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_baseline_home_24"
+
+            android:title="Home" />
+
+				<item
+		android:id="@+id/nav_profile"
+		android:icon="@drawable/ic_baseline_person"
+		android:title="Profile" />
+
+		<item
+            android:id="@+id/nav_aboutus"
+            android:icon="@drawable/aboutus"
+            android:title="About Us" />
+
+
+		<item
+            android:id="@+id/nav_aboutapp"
+            android:icon="@drawable/help"
+            android:title="About App" />
+		<item
+	android:id="@+id/privacy"
+	android:icon="@drawable/privacy"
+	android:title="Privacy Policy"
+		
+		
+		/>
+
+	</group>
+
+
+
+	<group android:checkableBehavior="single">
+		<item android:title="Contact">
+			<menu>
+				<item
+		android:id="@+id/nav_feedback"
+		android:icon="@drawable/icon_sent"
+		android:title="Feedback" />
+
+				<item
+				android:id="@+id/nav_sentSMS"
+			    android:visible="false"
+				android:icon="@drawable/ic_baseline_email_24"
+				android:title="Sent SMS For Me" />
+
+				<item
+				android:id="@+id/nav_RePort"
+				android:icon="@drawable/bugreport"
+				android:title="Report Problem" />
+
+
+		
+			</menu>
+		</item>
+	</group>
+
+
+	<group android:checkableBehavior="single">
+		<item  android:title="Different">
+
+			<menu>
+				<item
+		android:id="@+id/nav_signout"
+		android:icon="@drawable/signout"
+		android:title="Sign Out" />
+
+			
+			</menu>
+		</item>
+	</group>
+
+</menu>
+
+<!-- Code to implement into Activity:
+
+Android.Widget.SearchView searchView;
+public override bool OnCreateOptionsMenu(IMenu menu)
+{
+  this.MenuInflater.Inflate(Resource.Menu.menu1, menu);
+
+  var searchItem = menu.FindItem(Resource.Id.action_search);
+
+  searchView = searchItem.ActionProvider.JavaCast<Android.Widget.SearchView>();
+
+  searchView.QueryTextSubmit += (sender, args) =>
+  {
+    Toast.MakeText(this, "You searched: " + args.Query, ToastLength.Short).Show();
+
+  };
+
+
+  return base.OnCreateOptionsMenu(menu);
+}
+
+-->

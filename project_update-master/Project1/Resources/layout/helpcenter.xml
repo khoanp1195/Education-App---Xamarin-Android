@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:background="@color/background1"
+    android:layout_height="match_parent">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:id="@+id/problem"
+            app:lottie_rawRes="@raw/problem"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+
+        <TextView
+            android:gravity="center"
+            android:textSize="19sp"
+            android:fontFamily="@font/doan"
+            android:text="Enter a question above and get answer from other developers around the world"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/headerTextColor"
+            android:layout_width="match_parent"
+            android:layout_height="170dp">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:minHeight="90dp"
+
+                android:id="@+id/cardView1"
+                app:cardElevation="12dp"
+                app:cardCornerRadius="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                tools:ignore="XmlNamespace">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    >
+                    <EditText
+                        android:hint="Ví dụ"
+
+                        android:layout_gravity="center"
+                        android:layout_height="50dp"
+                        android:layout_width="300dp"
+                        android:textSize="18sp"
+                        android:id="@+id/edtSearch"
+                        android:background="@drawable/textbox"
+                        android:imeOptions="actionNext"
+                        />
+
+
+
+                    <Button
+                        android:id="@+id/btnadd"
+                        android:text="ask any question ?"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="10dp"
+                        android:textSize="7sp"
+                        android:fontFamily="sans-serif-condensed"
+                        android:drawableLeft="@drawable/search"
+                        android:layout_width="160dp"
+                        android:layout_height="50dp"
+                        tools:ignore="HardcodedText" />
+
+
+                </LinearLayout>
+
+
+
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/background1"
+            >
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:scrollbars="vertical"
+
+
+                android:background="@color/background1"
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

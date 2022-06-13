@@ -1,0 +1,3 @@
+<FrameLayout android:fitsSystemWindows="true" android:id="@+id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"><LinearLayout android:id="@+id/linearLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical">
+
+        &gt; <include layout="@layout/include_main_layout" /></LinearLayout></FrameLayout>

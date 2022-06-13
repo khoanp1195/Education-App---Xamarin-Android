@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background1"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1"
+        android:background="@drawable/background"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Calculator"
+                android:textStyle="bold"
+                android:fontFamily="@font/doan"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back2"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+ 
+    
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/calculator_text_view"
+
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:textSize="50sp"
+        android:text="123" />
+
+    <androidx.gridlayout.widget.GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="4"
+
+        app:orientation="horizontal"
+        app:rowCount="5"
+        app:columnCount="4">
+        <Button
+            style="@style/button_calculator"
+            app:layout_columnSpan="4"
+            android:background="@color/holo_blue"
+            android:text="DEL" />
+        <Button
+            style="@style/button_calculator"
+                  android:background="@color/holo_blue"
+            android:text="7" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="8" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="9" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="÷" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="4" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="5" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="6" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="×" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="1" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="2" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="3" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="-" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="." />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="0" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="=" />
+        <Button
+                  android:background="@color/holo_blue"
+            style="@style/button_calculator"
+            android:text="+" />
+    </androidx.gridlayout.widget.GridLayout>
+</LinearLayout>

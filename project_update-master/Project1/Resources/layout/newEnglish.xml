@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:minWidth="300dp"
+    android:id="@+id/linearLayout1"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="Ask Question"
+        android:fontFamily="@font/doan"
+        android:textStyle="bold"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"/>
+
+
+    <View
+        android:background="@color/gray_300"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <LinearLayout
+        android:padding="16dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/fullnameText"
+            >
+            <EditText
+                android:hint="Title"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/departmentText"
+            >
+            <EditText
+                android:hint="Content"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:textSize="18sp"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+
+            android:id="@+id/setText"
+            >
+            <EditText
+                android:hint="User ask: "
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:imeOptions="actionNext"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+
+        <fr.ganfra.materialspinner.MaterialSpinner
+            android:id="@+id/statusSpinner"
+            app:ms_enableFloatingLabel="true"
+            app:ms_floatingLabelText="Select Status"
+            app:ms_hint="Categody"
+            app:ms_alignLabels="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:text="10/05/2022"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+        <Button
+            android:text="Submit"
+            android:id="@+id/submitBtn"
+            android:background="@drawable/button_2"
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"/>
+    </LinearLayout>
+
+</LinearLayout>

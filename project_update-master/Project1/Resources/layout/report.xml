@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent">
+
+    	  <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="?android:attr/actionBarSize"
+            android:background="?android:attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            app:layout_scrollFlags="scroll|enterAlways"
+            android:id="@+id/toolBar"/>
+   
+            />
+    
+    </android.support.design.widget.AppBarLayout>
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1"
+        android:background="@drawable/background"
+        android:minHeight="?android:attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:elevation="4dp"    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Flag Ranking"
+                android:textStyle="bold"
+                android:fontFamily="@font/doan"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back2"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+            <ImageView
+                android:id="@+id/searchButton"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/search"
+                android:visibility="gone"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+         
+
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+    <com.airbnb.lottie.LottieAnimationView
+        app:lottie_rawRes="@raw/problem"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+       <Spinner
+        
+        android:entries="@array/dropdown_array"
+        android:padding="5dp"
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"/>
+
+
+    <EditText
+        android:hint="Subject"
+        android:visibility="gone"
+        android:text="zphuongkhoaz@gmail.com"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtTo"  />
+    <EditText
+        android:hint="Message"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:id="@+id/edtMessage"
+        tools:ignore="Suspicious0dp" />
+    <Button
+        android:drawableRight="@drawable/ic_baseline_email_24"
+        android:text="Report Issue"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/round_btn"
+        android:padding="5dp"
+        
+        android:textColor="#FFF"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/btnSend" />
+
+
+	 <android.support.design.widget.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_height="match_parent"
+        android:layout_width="280dp"
+        android:layout_gravity="start"
+        android:fitsSystemWindows="true"
+        android:visibility="gone"
+        app:headerLayout="@layout/headerlayout"
+        app:menu="@menu/menu1"
+        
+        
+        />
+</LinearLayout>

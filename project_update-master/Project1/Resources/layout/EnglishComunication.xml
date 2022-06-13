@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/background1"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:background="@color/uberAsh">
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+
+
+
+
+                <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar1"
+                android:background="@drawable/background"
+                android:minHeight="?android:attr/actionBarSize"
+                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:elevation="4dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:text="Interview Question"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/doan"
+                        android:textColor="#fff"
+                        android:textSize="18sp"
+                        android:gravity="center"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+
+                    <ImageView
+                        android:id="@+id/backButton"
+                        android:layout_alignParentLeft="true"
+                        android:src="@drawable/back2"
+                        android:tint="#fff"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+
+                    <ImageView
+                        android:id="@+id/addNewButton"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/add"
+                        android:tint="#fff"
+                        android:visibility="gone"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"/>
+
+
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.Toolbar>
+                       <com.airbnb.lottie.LottieAnimationView
+                app:lottie_rawRes="@raw/english"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"/>
+                       <android.support.design.widget.TabLayout
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+    </android.support.design.widget.AppBarLayout>
+
+
+                <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+
+        </LinearLayout>
+
+
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_airballoon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/standard_23"
+            android:visibility="gone"
+            android:rotation="90"
+            app:fabSize="mini"
+             app:srcCompat="@drawable/search"
+          
+
+            tools:ignore="MissingDimension,XmlNamespace" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="@dimen/fab_margin"
+            app:fabSize="normal"
+            app:srcCompat="@drawable/ic_floatingbutton"/>
+    </FrameLayout>
+
+</LinearLayout>

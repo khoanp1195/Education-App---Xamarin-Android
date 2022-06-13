@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<layer-list  xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item>
+		<color android:color="@color/splashbackground"/>
+	</item>
+
+	<item>
+		<bitmap
+			android:src="@drawable/bg5"
+			android:scaleType ="center"
+			android:layout_height="300dp"
+			android:layout_width="fill_parent"
+			android:tileMode="disabled"
+			/>
+
+
+			
+		
+			
+	</item>
+	
+	
+</layer-list>

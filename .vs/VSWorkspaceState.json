@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\project_update-master",
+    "\\project_update-master\\Project1",
+    "\\project_update-master\\Project1\\Activities",
+    "\\project_update-master\\Project1\\Activities\\Notes",
+    "\\project_update-master\\Project1\\Activities\\Study",
+    "\\project_update-master\\Project1\\Activities\\Study\\EnglishDictionary",
+    "\\project_update-master\\Project1\\EventListener",
+    "\\project_update-master\\Project1\\Fragment",
+    "\\project_update-master\\Project1\\Helper"
+  ],
+  "SelectedNode": "\\project_update-master\\Project1\\Activities\\Notes\\AddNoteFragment.cs",
+  "PreviewInSolutionExplorer": false
+}

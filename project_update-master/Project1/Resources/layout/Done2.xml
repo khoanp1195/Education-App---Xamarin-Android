@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/nestedScrollView1"
+    android:background="@drawable/background"
+    tools:context=".ResultActivity">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/profile"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"/>
+
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/pic_iq"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+
+
+
+            android:text="CONGRATULATION"
+            android:fontFamily="@font/doan"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            />
+        <TextView
+            android:id="@+id/userName"
+            android:text="zphuongkhoaz@gmail.com"
+            android:layout_gravity="center"
+            android:textColor="@color/yello"
+            android:fontFamily="@font/doan"
+            android:textSize="30sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center"
+
+            android:text="YOUR SCORE"
+            android:textColor="@android:color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/txtTotalScore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/doan"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:text="8/10"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+
+            android:textColor="@android:color/black"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="@+id/score"
+            app:layout_constraintStart_toStartOf="@+id/txtTotalScore"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalScore" />
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="150dp"
+            app:cardCornerRadius="20dp"
+            android:layout_gravity="center"
+            android:layout_height="50dp">
+
+            <TextView
+                android:id="@+id/txtTotalQuestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_gravity="center"
+                android:drawablePadding="10dp"
+
+
+                android:text="500"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtTotalScore" />
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:text="Share your achivement or check leaderboard"
+            android:layout_gravity="center"
+            android:fontFamily="@font/doan"
+            android:textSize="30sp"
+
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:id="@+id/timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+      
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@+id/txtTotalQuestion">
+
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="15dp"
+
+
+
+                android:layout_marginLeft="40dp"
+                android:elevation="300dp"
+                app:cardBackgroundColor="@color/followersBg"
+                android:id="@+id/homebtn"
+
+
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:layout_margin="10dp"
+                        android:src="@drawable/home"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/homebtn"
+                android:layout_marginLeft="48dp"
+                android:layout_marginTop="10dp"
+                android:text="Home"
+                android:textColor="@color/white"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnTryAgain"
+                android:layout_marginLeft="160dp"
+                android:layout_marginTop="10dp"
+                android:text="Again"
+                android:textColor="@color/white"
+
+                android:textSize="20sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnTryAgain"
+                android:layout_marginLeft="270dp"
+                android:layout_marginTop="10dp"
+                android:text="share"
+                android:textColor="@color/white"
+
+                android:textSize="20sp" />
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="15dp"
+
+
+
+
+                android:layout_marginLeft="150dp"
+                app:cardBackgroundColor="@color/accent"
+                android:id="@+id/btnTryAgain"
+
+                android:layout_width="70dp"
+                android:elevation="300dp"
+                android:layout_height="70dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_play"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+            <androidx.cardview.widget.CardView
+
+                app:cardCornerRadius="15dp"
+
+
+
+                android:layout_marginLeft="260dp"
+                android:id="@+id/sentscore"
+                app:cardBackgroundColor="@color/yello"
+                android:elevation="300dp"
+
+                android:layout_width="70dp"
+                android:layout_height="70dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+
+
+                        android:layout_margin="10dp"
+                        android:src="@drawable/ic_sent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+        <ProgressBar
+            android:id="@+id/doneProgressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+        <com.airbnb.lottie.LottieAnimationView
+
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginTop="12dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/done"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

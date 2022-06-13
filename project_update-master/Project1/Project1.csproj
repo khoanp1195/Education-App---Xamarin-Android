@@ -1,0 +1,1364 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3A59FF4-C2A4-47B8-A1CE-EF294108D280}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <TemplateGuid>{122416d6-6b49-4ee2-a1e8-b825f31c79fe}</TemplateGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Project1</RootNamespace>
+    <AssemblyName>Project1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>True</Deterministic>
+    <AndroidApplication>True</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
+    <AndroidResgenClass>Resource</AndroidResgenClass>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidUseLatestPlatformSdk>false</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v12.0</TargetFrameworkVersion>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <MonoAndroidResourcePrefix>Resources</MonoAndroidResourcePrefix>
+    <MonoAndroidAssetsPrefix>Assets</MonoAndroidAssetsPrefix>
+    <AndroidEnableSGenConcurrent>true</AndroidEnableSGenConcurrent>
+    <AndroidUseAapt2>true</AndroidUseAapt2>
+    <AndroidHttpClientHandlerType>Xamarin.Android.Net.AndroidClientHandler</AndroidHttpClientHandlerType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>False</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidEnableMultiDex>true</AndroidEnableMultiDex>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>portable</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidManagedSymbols>true</AndroidManagedSymbols>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+    <EmbedAssembliesIntoApk>True</EmbedAssembliesIntoApk>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <AndroidEnableProfiledAot>false</AndroidEnableProfiledAot>
+    <BundleAssemblies>false</BundleAssemblies>
+    <AndroidKeyStore>false</AndroidKeyStore>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Mono.Android.Export" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="Mono.Android" />
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Activities\About.cs" />
+    <Compile Include="Activities\AboutApp.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\Flag.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\HomeGame.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\UserAddQuestion.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\XamarinQuiz.cs" />
+    <Compile Include="Activities\AddQuestionQuizz\AddQuestionQuizzDialogFragment.cs" />
+    <Compile Include="Activities\AddQuestionQuizz\QuestionQuizz.cs" />
+    <Compile Include="Activities\Calculator\Calculator.cs" />
+    <Compile Include="Activities\ClipTutorial\AndroidTutorial.cs" />
+    <Compile Include="Activities\ClipTutorial\Csharptutorial.cs" />
+    <Compile Include="Activities\ClipTutorial\MAUI.cs" />
+    <Compile Include="Activities\ClipTutorial\OxfordComunication.cs" />
+    <Compile Include="Activities\CurvedBottom\CurvedBottomNavigationView.cs" />
+    <Compile Include="Activities\CurvedBottom\MainBottomCurvedActivity.cs" />
+    <Compile Include="Activities\Done\Done.cs" />
+    <Compile Include="Activities\Done\DoneFlag.cs" />
+    <Compile Include="Activities\Done\DoneXamarin.cs" />
+    <Compile Include="Activities\Essentials\Finger_Activity.cs" />
+    <Compile Include="Activities\FirebaseMessage\MyFirebaseIDInstance.cs" />
+    <Compile Include="Activities\FirebaseMessage\MyMessagingService.cs" />
+    <Compile Include="Activities\FloatingButton\FloatingButton.cs" />
+    <Compile Include="Activities\Forum\CreatePostActivity.cs" />
+    <Compile Include="Activities\Forum\Forum_Activity.cs" />
+    <Compile Include="Activities\HighScore.cs" />
+    <Compile Include="Activities\Intro\IntroMath.cs" />
+    <Compile Include="Activities\Local Notification\Notification_Activity.cs" />
+    <Compile Include="Activities\Notes\AddNoteFragment.cs" />
+    <Compile Include="Activities\Notes\EditNotesFragment.cs" />
+    <Compile Include="Activities\Notes\Notes.cs" />
+    <Compile Include="Activities\Privacy_Policy.cs" />
+    <Compile Include="Activities\Profile\Profile_Activity.cs" />
+    <Compile Include="Activities\RankingScoreFragment\Flag_ranking.cs" />
+    <Compile Include="Activities\RankingScoreFragment\Xamarin_ranking.cs" />
+    <Compile Include="Activities\report.cs" />
+    <Compile Include="Activities\RestfulApi\AddTasks.cs" />
+    <Compile Include="Activities\RestfulApi\DeleteTasks.cs" />
+    <Compile Include="Activities\RestfulApi\mainTask.cs" />
+    <Compile Include="Activities\RestfulApi\UpdateTasks.cs" />
+    <Compile Include="Activities\Sanh\SignOut.cs" />
+    <Compile Include="Activities\Sanh\ForgotPass.cs" />
+    <Compile Include="Activities\Sanh\IntroActivity.cs" />
+    <Compile Include="Activities\Sanh\LoginActivity.cs" />
+    <Compile Include="Activities\Sanh\RegisterActivity.cs" />
+    <Compile Include="Activities\Sanh\SplashScreenActivity.cs" />
+    <Compile Include="Activities\Sanh\wait.cs" />
+    <Compile Include="Activities\Sanh\WelcomeActivity.cs" />
+    <Compile Include="Activities\ScanText\ContentScanTextActivity.cs" />
+    <Compile Include="Activities\ScanText\ScanTextActivity.cs" />
+    <Compile Include="Activities\Score\Score.cs" />
+    <Compile Include="Activities\Score\ScoreFlag.cs" />
+    <Compile Include="Activities\Score\ScoreXamarin.cs" />
+    <Compile Include="Activities\Study\Course\AllCourese.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\addnewword.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\Advanced.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\Comunication.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\Normal.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\FavoriteWordActivity.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\SelectWord.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\TodayWord.cs" />
+    <Compile Include="Activities\Study\EnglishDictionary\UserContribute.cs" />
+    <Compile Include="Activities\Study\FirebaseActivity.cs" />
+    <Compile Include="Activities\Study\Question\AddUserReplyFragment.cs" />
+    <Compile Include="Activities\Study\Question\detailQuesiton.cs" />
+    <Compile Include="Activities\Study\Question\UserReply.cs" />
+    <Compile Include="Activities\Study\Ranking\detailUserRanking.cs" />
+    <Compile Include="Activities\Study\Xamarin\addcontent.cs" />
+    <Compile Include="Activities\Study\Xamarin\detailxamarin.cs" />
+    <Compile Include="Activities\Study\Xamarin\detailxamarin1.cs" />
+    <Compile Include="Activities\Study\Xamarin\Fragment2.cs" />
+    <Compile Include="Activities\Study\Xamarin\Fragment1.cs" />
+    <Compile Include="Activities\Study\Study1.cs" />
+    <Compile Include="Activities\Study\StudyActivity.cs" />
+    <Compile Include="Activities\TextRecognization\TextRecognization.cs" />
+    <Compile Include="Activities\Tip Course\EnglishComunicationCourse.cs" />
+    <Compile Include="Activities\Tip Course\EnglishComunication\AdvancedComunication.cs" />
+    <Compile Include="Activities\Tip Course\EnglishComunication\NormalComunication.cs" />
+    <Compile Include="Activities\Tip Course\EnglishComunication\EnglisClip.cs" />
+    <Compile Include="Activities\Tip Course\OOPInterview.cs" />
+    <Compile Include="Activities\Tip Course\OOPInterview\OOPAdvancedInterviewFragment.cs" />
+    <Compile Include="Activities\Tip Course\OOPInterview\OOPInterviewFragment.cs" />
+    <Compile Include="Activities\Tip Course\TipInterview.cs" />
+    <Compile Include="Activities\Tip Course\XamarinInterview\XamarinClip.cs" />
+    <Compile Include="Activities\Tip Course\XamarinInterview\XamarinAdvancedInterviewFragment.cs" />
+    <Compile Include="Activities\Tip Course\XamarinInterview\XamarinInterviewFragment.cs" />
+    <Compile Include="Activities\Transformer\DepthPageTransformer.cs" />
+    <Compile Include="Activities\Essentials\SentSms.cs" />
+    <Compile Include="Activities\Intro\IntroEnglish.cs" />
+    <Compile Include="Activities\Intro\IntroIQ.cs" />
+    <Compile Include="Activities\MainActivity.cs" />
+    <Compile Include="Activities\MainActivity2.cs" />
+    <Compile Include="Activities\MyIntro.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\English.cs" />
+    <Compile Include="Activities\ActivitiesPlaying\IQ.cs" />
+    <Compile Include="Activities\RankingScoreFragment\IQ_ranking.cs" />
+    <Compile Include="Activities\Webview\Angular.cs" />
+    <Compile Include="Activities\youtube\youtube.cs" />
+    <Compile Include="Adapter\AluminiAdapter.cs" />
+    <Compile Include="Adapter\ExpandableListAdapter.cs" />
+    <Compile Include="Adapter\PostAdapter.cs" />
+    <Compile Include="Adapter\StudyAdapter.cs" />
+    <Compile Include="Adapter\UserContributeAdapter.cs" />
+    <Compile Include="Adapter\NotesAdapter.cs" />
+    <Compile Include="Adapter\UserRankingAdapter.cs" />
+    <Compile Include="Adapter\ViewPagerAdapter.cs" />
+    <Compile Include="Adapter\QuestionAdapter.cs" />
+    <Compile Include="Adapter\XamarinAdapter.cs" />
+    <Compile Include="AndroidX\AppCompat\Widget\ActionBar.cs" />
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\ContentScanTextAdapter.cs" />
+    <Compile Include="Common\EnglishComunicationCustomAdapter.cs" />
+    <Compile Include="Common\FavoriteWordCustomAdapter.cs" />
+    <Compile Include="Common\TipCourseCustomAdapter.cs" />
+    <Compile Include="Common\QuestionCustomAdapter.cs" />
+    <Compile Include="Common\CustomAdapter.cs" />
+    <Compile Include="DBHelper\DbHelper.cs" />
+    <Compile Include="EventListener\FullnameListener.cs" />
+    <Compile Include="EventListener\LikeEventListener.cs" />
+    <Compile Include="EventListener\PostEventListener.cs" />
+    <Compile Include="EventListener\QuestionListeners.cs" />
+    <Compile Include="EventListener\UserContributeListeners.cs" />
+    <Compile Include="EventListener\TakeNotesListeners.cs" />
+    <Compile Include="EventListener\UserRankingListeners.cs" />
+    <Compile Include="EventListener\XamarinListeners.cs" />
+    <Compile Include="EventListener\AluminListeners.cs" />
+    <Compile Include="EventListener\FingerprintHandler.cs" />
+    <Compile Include="EventListener\IFirebaseLoadnDone.cs" />
+    <Compile Include="EventListener\TaskCompletionListener.cs" />
+    <Compile Include="Fragment\AddAluminFragment.cs" />
+    <Compile Include="Fragment\dialog_finger.cs" />
+    <Compile Include="Fragment\dialog_forgot.cs" />
+    <Compile Include="Fragment\dialog_support.cs" />
+    <Compile Include="Fragment\EditEnglishFragment.cs" />
+    <Compile Include="Fragment\EditPostFragment.cs" />
+    <Compile Include="Fragment\EnglishFragment.cs" />
+    <Compile Include="Fragment\ExpandableListView\AdvanceInterview.cs" />
+    <Compile Include="Fragment\ExpandableListView\MiddleInterview.cs" />
+    <Compile Include="Fragment\ExpandableListView\NormalInterview.cs" />
+    <Compile Include="Fragment\HelpCenterFragment.cs" />
+    <Compile Include="Fragment\askQuestion.cs" />
+    <Compile Include="Fragment\HomeFragment.cs" />
+    <Compile Include="Fragment\InterView_Fragment.cs" />
+    <Compile Include="Fragment\ProgressDialogueFragment.cs" />
+    <Compile Include="Fragment\SettingFragment.cs" />
+    <Compile Include="Helper\AppDataHelper.cs" />
+    <Compile Include="Helper\LocationCallbackHelper.cs" />
+    <Compile Include="Model\ContentScanText.cs" />
+    <Compile Include="Model\FavoriteWord.cs" />
+    <Compile Include="Model\Notees.cs" />
+    <Compile Include="Model\Post.cs" />
+    <Compile Include="Model\Tasks.cs" />
+    <Compile Include="Model\UserQuestion.cs" />
+    <Compile Include="Model\Alumini.cs" />
+    <Compile Include="Model\EnglishQuestion.cs" />
+    <Compile Include="Model\FlagQuestion.cs" />
+    <Compile Include="Model\IQQuestion.cs" />
+    <Compile Include="Model\MessageContent.cs" />
+    <Compile Include="Model\QuestionXamrin.cs" />
+    <Compile Include="Model\Ranking.cs" />
+    <Compile Include="Model\UserRanking.cs" />
+    <Compile Include="Model\ComunicationEnglishModel.cs" />
+    <Compile Include="Model\XamarinInterview.cs" />
+    <Compile Include="Model\XamarinCourse.cs" />
+    <Compile Include="Resources\Resource.designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="EventListener\UserProfileEventlistener.cs" />
+    <Compile Include="StudyModel\English.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <GoogleServicesJson Include="google-services %283%29.json" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Assets\AboutAssets.txt" />
+    <AndroidResource Include="Resources\font\doan.ttf" />
+    <AndroidResource Include="Resources\raw\forgotpassword.json" />
+    <AndroidResource Include="Resources\raw\world.json" />
+    <AndroidResource Include="Resources\raw\setting.json" />
+    <AndroidResource Include="Resources\raw\iq.json" />
+    <AndroidResource Include="Resources\raw\problem.json" />
+    <AndroidResource Include="Resources\drawable\audiencepoll.webp" />
+    <AndroidResource Include="Resources\drawable\fiftyfiftyline.webp" />
+    <AndroidResource Include="Resources\raw\study.json" />
+    <AndroidResource Include="Resources\raw\bye.json" />
+    <AndroidResource Include="Resources\raw\interview.json" />
+    <AndroidResource Include="Resources\raw\help.json" />
+    <AndroidResource Include="Resources\raw\english.json" />
+    <AndroidResource Include="Resources\raw\code2.json" />
+    <AndroidResource Include="Resources\font\mazzardm_semibolditalic.ttf" />
+    <AndroidResource Include="Resources\raw\ranking.json" />
+    <AndroidResource Include="Resources\raw\done.json" />
+    <AndroidResource Include="Resources\raw\hello.json" />
+    <AndroidResource Include="Resources\raw\wait.json" />
+    <AndroidResource Include="Resources\raw\boystudying.json" />
+    <AndroidResource Include="Resources\raw\MyDB.db" />
+    <AndroidResource Include="Resources\raw\watchvideo.json" />
+    <AndroidResource Include="Resources\raw\welcomepage.json" />
+    <AndroidResource Include="Resources\raw\adddocument.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\values\colors.xml" />
+    <AndroidResource Include="Resources\values\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\values\strings.xml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher.xml" />
+    <AndroidResource Include="Resources\mipmap-anydpi-v26\ic_launcher_round.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_launcher_round.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_foreground.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_launcher_round.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splash.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="AndroidAboutPage">
+      <Version>1.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="AppIntro">
+      <Version>1.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="Com.Airbnb.Android.Lottie">
+      <Version>4.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="DotLiquid">
+      <Version>2.2.602</Version>
+    </PackageReference>
+    <PackageReference Include="FirebaseDatabase.net">
+      <Version>4.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="FormsCurvedBottomNavigation">
+      <Version>1.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="MaterialSpinner-Xamarin">
+      <Version>1.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Data.Sqlite.Core">
+      <Version>7.0.0-preview.3.22175.1</Version>
+    </PackageReference>
+    <PackageReference Include="Naxam.Ittianyu.BottomNavExtension">
+      <Version>2.0.4</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>13.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.Controls.CircleImageView">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.FloatingActionButton">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="Refractored.GifImageView">
+      <Version>2.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="SQLite">
+      <Version>3.13.0</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.8.116</Version>
+    </PackageReference>
+    <PackageReference Include="Square.Picasso">
+      <Version>2.5.2.2</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections">
+      <Version>4.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.Immutable">
+      <Version>6.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="System.Collections.NonGeneric">
+      <Version>4.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.4</Version>
+    </PackageReference>
+    <PackageReference Include="System.Numerics.Vectors">
+      <Version>4.5.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>5.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Animated.Vector.Drawable">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CoordinaterLayout">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Core.Utils">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.CustomTabs">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Design">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Fragment">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Media.Compat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v4">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.AppCompat">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.v7.RecyclerView">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Support.Vector.Drawable">
+      <Version>28.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Android.Volley">
+      <Version>1.1.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.CardView">
+      <Version>1.0.0.15</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout">
+      <Version>2.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.ConstraintLayout.Solver">
+      <Version>2.0.4.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.CoordinatorLayout">
+      <Version>1.1.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Fragment">
+      <Version>1.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.GridLayout">
+      <Version>1.0.0.13</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Legacy.Support.V4">
+      <Version>1.0.0.12</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData">
+      <Version>2.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Lifecycle.LiveData.Core">
+      <Version>2.4.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.MediaRouter">
+      <Version>1.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Migration">
+      <Version>1.0.8</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.Palette">
+      <Version>1.0.0.7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.VectorDrawable">
+      <Version>1.1.0.13</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.AndroidX.VectorDrawable.Animated">
+      <Version>1.1.0.13</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Facebook.Login.Android">
+      <Version>11.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.FFImageLoading">
+      <Version>2.4.11.982</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Auth">
+      <Version>119.2.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Common">
+      <Version>120.0.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Core">
+      <Version>117.4.4</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Database">
+      <Version>119.2.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Firestore">
+      <Version>123.0.3.6</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Firebase.Storage">
+      <Version>71.1602.0-preview7</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Google.Android.Material" Version="1.0.0.1" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
+    <PackageReference Include="Xamarin.Google.Guava">
+      <Version>28.2.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Analytics">
+      <Version>118.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Auth">
+      <Version>119.2.0.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Base">
+      <Version>118.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Basement">
+      <Version>118.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Games">
+      <Version>71.1700.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Location">
+      <Version>118.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Maps">
+      <Version>117.0.1.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Places">
+      <Version>117.0.0.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Tasks">
+      <Version>118.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.GooglePlayServices.Vision">
+      <Version>120.1.3.5</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.JazzyViewPager">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="XamarinVectorMaster">
+      <Version>1.1.5</Version>
+    </PackageReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\login.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\foreground.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\font\nunito.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\font\nunito_semibold.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_email_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_vpn_key_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\btn_bg_design.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Register.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_account_circle_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\phone.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\wait.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\splashscreen1.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\back.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\back2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\checkbox_ischecked.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\include_main_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\headerlayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\profile.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_home_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_person.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_settings_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\help.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\promo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\payment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\menu\menu1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\menu.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\menu16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\redpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\greenpoint.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\possition.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_baseline_favorite_24.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\round_btn.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\roundedges.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\uberroundbutton.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\signout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_help_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_history_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_menu_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_my_location_black_48dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_person_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_promo_orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_support_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_wallet_action.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\greenmarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\redmarker.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\myposition1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\activity_splash_screen.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\greenball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ic_action_favwhite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\redball.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\education.gif" />
+    <Content Include="Resources\anim\Enter.xml" />
+    <Content Include="Resources\anim\exit.xml" />
+    <AndroidResource Include="Resources\anim\fade_in.xml" />
+    <AndroidResource Include="Resources\drawable\sunshine.png" />
+    <AndroidResource Include="Resources\layout\progress.axml" />
+    <AndroidResource Include="Resources\drawable\roundButton.xml" />
+    <AndroidResource Include="Resources\layout\Main.axml" />
+    <AndroidResource Include="Resources\menu\menu_main.xml" />
+    <AndroidResource Include="Resources\drawable\Icon.png" />
+    <AndroidResource Include="Resources\layout\introlayout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\values\dimens.xml" />
+    <AndroidResource Include="Resources\layout\floatingbutton.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\add.png" />
+    <AndroidResource Include="Resources\drawable\calculate.png" />
+    <AndroidResource Include="Resources\drawable\note.png" />
+    <AndroidResource Include="Resources\layout\ForgotPassword.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\MainActivity.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\activity_main2.axml" />
+    <AndroidResourceAnalysisConfig Include="Resources\layout\activity_main.xml">
+      <SubType>Designer</SubType>
+    </AndroidResourceAnalysisConfig>
+    <AndroidResource Include="Resources\drawable\bg.png" />
+    <AndroidResource Include="Resources\drawable\bottomlayout.xml" />
+    <AndroidResource Include="Resources\drawable\gradient_bg.xml" />
+    <AndroidResource Include="Resources\drawable\home.png" />
+    <AndroidResource Include="Resources\drawable\humidity.png" />
+    <AndroidResource Include="Resources\drawable\ic_launcher_background.xml" />
+    <AndroidResource Include="Resources\drawable\info.png" />
+    <AndroidResource Include="Resources\drawable\map.png" />
+    <AndroidResource Include="Resources\drawable\nbn.png" />
+    <AndroidResource Include="Resources\drawable\pressure.png" />
+    <AndroidResource Include="Resources\drawable\search.png" />
+    <AndroidResource Include="Resources\drawable\setting.png" />
+    <AndroidResource Include="Resources\drawable\sunrise.png" />
+    <AndroidResource Include="Resources\drawable\sunset.png" />
+    <AndroidResource Include="Resources\drawable\wind.png" />
+    <AndroidResource Include="Resources\drawable\background.xml" />
+    <AndroidResource Include="Resources\drawable\background_menu.xml" />
+    <AndroidResource Include="Resources\drawable\item_background.xml" />
+    <AndroidResource Include="Resources\drawable\red_circle.png" />
+    <AndroidResource Include="Resources\layout\Answer.xml" />
+    <AndroidResource Include="Resources\drawable\button_background.xml" />
+    <AndroidResource Include="Resources\drawable\top_button_background.xml" />
+    <AndroidResource Include="Resources\drawable\white_background.xml" />
+    <AndroidResource Include="Resources\drawable\top_background.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\icon_sun.png" />
+    <AndroidResource Include="Resources\layout\home_fragment.xml" />
+    <AndroidResource Include="Resources\drawable\afghanistan.png" />
+    <AndroidResource Include="Resources\drawable\albania.png" />
+    <AndroidResource Include="Resources\drawable\algeria.png" />
+    <AndroidResource Include="Resources\drawable\american_samoa.png" />
+    <AndroidResource Include="Resources\drawable\andorra.png" />
+    <AndroidResource Include="Resources\drawable\angola.png" />
+    <AndroidResource Include="Resources\drawable\anguilla.png" />
+    <AndroidResource Include="Resources\drawable\antigua_and_barbuda.png" />
+    <AndroidResource Include="Resources\drawable\argentina.png" />
+    <AndroidResource Include="Resources\drawable\armenia.png" />
+    <AndroidResource Include="Resources\drawable\aruba.png" />
+    <AndroidResource Include="Resources\drawable\australia.png" />
+    <AndroidResource Include="Resources\drawable\austria.png" />
+    <AndroidResource Include="Resources\drawable\azerbaijan.png" />
+    <AndroidResource Include="Resources\drawable\bahamas.png" />
+    <AndroidResource Include="Resources\drawable\bahrain.png" />
+    <AndroidResource Include="Resources\drawable\bangladesh.png" />
+    <AndroidResource Include="Resources\drawable\barbados.png" />
+    <AndroidResource Include="Resources\drawable\belarus.png" />
+    <AndroidResource Include="Resources\drawable\belgium.png" />
+    <AndroidResource Include="Resources\drawable\belize.png" />
+    <AndroidResource Include="Resources\drawable\benin.png" />
+    <AndroidResource Include="Resources\drawable\bermuda.png" />
+    <AndroidResource Include="Resources\drawable\bg_quizz1.jpg" />
+    <AndroidResource Include="Resources\drawable\bg_quizz2.jpg" />
+    <AndroidResource Include="Resources\drawable\bhutan.png" />
+    <AndroidResource Include="Resources\drawable\bolivia.png" />
+    <AndroidResource Include="Resources\drawable\bosnia.png" />
+    <AndroidResource Include="Resources\drawable\botswana.png" />
+    <AndroidResource Include="Resources\drawable\brazil.png" />
+    <AndroidResource Include="Resources\drawable\british_virgin_islands.png" />
+    <AndroidResource Include="Resources\drawable\brunei.png" />
+    <AndroidResource Include="Resources\drawable\bulgaria.png" />
+    <AndroidResource Include="Resources\drawable\burkina_faso.png" />
+    <AndroidResource Include="Resources\drawable\burundi.png" />
+    <AndroidResource Include="Resources\drawable\button_border.xml" />
+    <AndroidResource Include="Resources\drawable\cambodia.png" />
+    <AndroidResource Include="Resources\drawable\cameroon.png" />
+    <AndroidResource Include="Resources\drawable\canada.png" />
+    <AndroidResource Include="Resources\drawable\cape_verde.png" />
+    <AndroidResource Include="Resources\drawable\cayman_islands.png" />
+    <AndroidResource Include="Resources\drawable\central_african_republic.png" />
+    <AndroidResource Include="Resources\drawable\chad.png" />
+    <AndroidResource Include="Resources\drawable\chile.png" />
+    <AndroidResource Include="Resources\drawable\china.png" />
+    <AndroidResource Include="Resources\drawable\christmas_island.png" />
+    <AndroidResource Include="Resources\drawable\colombia.png" />
+    <AndroidResource Include="Resources\drawable\comoros.png" />
+    <AndroidResource Include="Resources\drawable\cook_islands.png" />
+    <AndroidResource Include="Resources\drawable\costa_rica.png" />
+    <AndroidResource Include="Resources\drawable\cote_divoire.png" />
+    <AndroidResource Include="Resources\drawable\croatia.png" />
+    <AndroidResource Include="Resources\drawable\cuba.png" />
+    <AndroidResource Include="Resources\drawable\cyprus.png" />
+    <AndroidResource Include="Resources\drawable\czech_republic.png" />
+    <AndroidResource Include="Resources\drawable\democratic_republic_of_the_congo.png" />
+    <AndroidResource Include="Resources\drawable\denmark.png" />
+    <AndroidResource Include="Resources\drawable\djibouti.png" />
+    <AndroidResource Include="Resources\drawable\dominica.png" />
+    <AndroidResource Include="Resources\drawable\dominican_republic.png" />
+    <AndroidResource Include="Resources\drawable\ecuador.png" />
+    <AndroidResource Include="Resources\drawable\egypt.png" />
+    <AndroidResource Include="Resources\drawable\el_salvador.png" />
+    <AndroidResource Include="Resources\drawable\equatorial_guinea.png" />
+    <AndroidResource Include="Resources\drawable\eritrea.png" />
+    <AndroidResource Include="Resources\drawable\estonia.png" />
+    <AndroidResource Include="Resources\drawable\ethiopia.png" />
+    <AndroidResource Include="Resources\drawable\falkland_islands.png" />
+    <AndroidResource Include="Resources\drawable\faroe_islands.png" />
+    <AndroidResource Include="Resources\drawable\fiji.png" />
+    <AndroidResource Include="Resources\drawable\finland.png" />
+    <AndroidResource Include="Resources\drawable\france.png" />
+    <AndroidResource Include="Resources\drawable\french_polynesia.png" />
+    <AndroidResource Include="Resources\drawable\gabon.png" />
+    <AndroidResource Include="Resources\drawable\gambia.png" />
+    <AndroidResource Include="Resources\drawable\georgia.png" />
+    <AndroidResource Include="Resources\drawable\germany.png" />
+    <AndroidResource Include="Resources\drawable\ghana.png" />
+    <AndroidResource Include="Resources\drawable\gibraltar.png" />
+    <AndroidResource Include="Resources\drawable\greece.png" />
+    <AndroidResource Include="Resources\drawable\greenland.png" />
+    <AndroidResource Include="Resources\drawable\grenada.png" />
+    <AndroidResource Include="Resources\drawable\guam.png" />
+    <AndroidResource Include="Resources\drawable\guatemala.png" />
+    <AndroidResource Include="Resources\drawable\guinea.png" />
+    <AndroidResource Include="Resources\drawable\guinea_bissau.png" />
+    <AndroidResource Include="Resources\drawable\guyana.png" />
+    <AndroidResource Include="Resources\drawable\haiti.png" />
+    <AndroidResource Include="Resources\drawable\honduras.png" />
+    <AndroidResource Include="Resources\drawable\hong_kong.png" />
+    <AndroidResource Include="Resources\drawable\hungary.png" />
+    <AndroidResource Include="Resources\drawable\iceland.png" />
+    <AndroidResource Include="Resources\drawable\india.png" />
+    <AndroidResource Include="Resources\drawable\indonesia.png" />
+    <AndroidResource Include="Resources\drawable\iran.png" />
+    <AndroidResource Include="Resources\drawable\iraq.png" />
+    <AndroidResource Include="Resources\drawable\ireland.png" />
+    <AndroidResource Include="Resources\drawable\israel.png" />
+    <AndroidResource Include="Resources\drawable\italy.png" />
+    <AndroidResource Include="Resources\drawable\jamaica.png" />
+    <AndroidResource Include="Resources\drawable\japan.png" />
+    <AndroidResource Include="Resources\drawable\jordan.png" />
+    <AndroidResource Include="Resources\drawable\kazakhstan.png" />
+    <AndroidResource Include="Resources\drawable\kenya.png" />
+    <AndroidResource Include="Resources\drawable\kiribati.png" />
+    <AndroidResource Include="Resources\drawable\kuwait.png" />
+    <AndroidResource Include="Resources\drawable\kyrgyzstan.png" />
+    <AndroidResource Include="Resources\drawable\laos.png" />
+    <AndroidResource Include="Resources\drawable\latvia.png" />
+    <AndroidResource Include="Resources\drawable\lebanon.png" />
+    <AndroidResource Include="Resources\drawable\lesotho.png" />
+    <AndroidResource Include="Resources\drawable\liberia.png" />
+    <AndroidResource Include="Resources\drawable\libya.png" />
+    <AndroidResource Include="Resources\drawable\liechtenstein.png" />
+    <AndroidResource Include="Resources\drawable\lithuania.png" />
+    <AndroidResource Include="Resources\drawable\luxembourg.png" />
+    <AndroidResource Include="Resources\drawable\macao.png" />
+    <AndroidResource Include="Resources\drawable\macedonia.png" />
+    <AndroidResource Include="Resources\drawable\madagascar.png" />
+    <AndroidResource Include="Resources\drawable\malawi.png" />
+    <AndroidResource Include="Resources\drawable\malaysia.png" />
+    <AndroidResource Include="Resources\drawable\maldives.png" />
+    <AndroidResource Include="Resources\drawable\mali.png" />
+    <AndroidResource Include="Resources\drawable\malta.png" />
+    <AndroidResource Include="Resources\drawable\marshall_islands.png" />
+    <AndroidResource Include="Resources\drawable\martinique.png" />
+    <AndroidResource Include="Resources\drawable\mauritania.png" />
+    <AndroidResource Include="Resources\drawable\mauritius.png" />
+    <AndroidResource Include="Resources\drawable\mexico.png" />
+    <AndroidResource Include="Resources\drawable\micronesia.png" />
+    <AndroidResource Include="Resources\drawable\moldova.png" />
+    <AndroidResource Include="Resources\drawable\monaco.png" />
+    <AndroidResource Include="Resources\drawable\mongolia.png" />
+    <AndroidResource Include="Resources\drawable\montserrat.png" />
+    <AndroidResource Include="Resources\drawable\morocco.png" />
+    <AndroidResource Include="Resources\drawable\mozambique.png" />
+    <AndroidResource Include="Resources\drawable\myanmar.png" />
+    <AndroidResource Include="Resources\drawable\namibia.png" />
+    <AndroidResource Include="Resources\drawable\nauru.png" />
+    <AndroidResource Include="Resources\drawable\nepal.png" />
+    <AndroidResource Include="Resources\drawable\netherlands.png" />
+    <AndroidResource Include="Resources\drawable\netherlands_antilles.png" />
+    <AndroidResource Include="Resources\drawable\new_zealand.png" />
+    <AndroidResource Include="Resources\drawable\nicaragua.png" />
+    <AndroidResource Include="Resources\drawable\niger.png" />
+    <AndroidResource Include="Resources\drawable\nigeria.png" />
+    <AndroidResource Include="Resources\drawable\niue.png" />
+    <AndroidResource Include="Resources\drawable\norfolk_island.png" />
+    <AndroidResource Include="Resources\drawable\north_korea.png" />
+    <AndroidResource Include="Resources\drawable\norway.png" />
+    <AndroidResource Include="Resources\drawable\oman.png" />
+    <AndroidResource Include="Resources\drawable\pakistan.png" />
+    <AndroidResource Include="Resources\drawable\palau.png" />
+    <AndroidResource Include="Resources\drawable\panama.png" />
+    <AndroidResource Include="Resources\drawable\papua_new_guinea.png" />
+    <AndroidResource Include="Resources\drawable\paraguay.png" />
+    <AndroidResource Include="Resources\drawable\peru.png" />
+    <AndroidResource Include="Resources\drawable\philippines.png" />
+    <AndroidResource Include="Resources\drawable\pitcairn_islands.png" />
+    <AndroidResource Include="Resources\drawable\poland.png" />
+    <AndroidResource Include="Resources\drawable\portugal.png" />
+    <AndroidResource Include="Resources\drawable\puerto_rico.png" />
+    <AndroidResource Include="Resources\drawable\qatar.png" />
+    <AndroidResource Include="Resources\drawable\republic_of_the_congo.png" />
+    <AndroidResource Include="Resources\drawable\romania.png" />
+    <AndroidResource Include="Resources\drawable\round_corner.xml" />
+    <AndroidResource Include="Resources\drawable\russian_federation.png" />
+    <AndroidResource Include="Resources\drawable\rwanda.png" />
+    <AndroidResource Include="Resources\drawable\saint_kitts_and_nevis.png" />
+    <AndroidResource Include="Resources\drawable\saint_lucia.png" />
+    <AndroidResource Include="Resources\drawable\saint_pierre.png" />
+    <AndroidResource Include="Resources\drawable\saint_vicent_and_the_grenadines.png" />
+    <AndroidResource Include="Resources\drawable\samoa.png" />
+    <AndroidResource Include="Resources\drawable\san_marino.png" />
+    <AndroidResource Include="Resources\drawable\sao_tome_and_principe.png" />
+    <AndroidResource Include="Resources\drawable\saudi_arabia.png" />
+    <AndroidResource Include="Resources\drawable\senegal.png" />
+    <AndroidResource Include="Resources\drawable\serbia_and_montenegro.png" />
+    <AndroidResource Include="Resources\drawable\seychelles.png" />
+    <AndroidResource Include="Resources\drawable\sierra_leone.png" />
+    <AndroidResource Include="Resources\drawable\singapore.png" />
+    <AndroidResource Include="Resources\drawable\slovakia.png" />
+    <AndroidResource Include="Resources\drawable\slovenia.png" />
+    <AndroidResource Include="Resources\drawable\soloman_islands.png" />
+    <AndroidResource Include="Resources\drawable\somalia.png" />
+    <AndroidResource Include="Resources\drawable\south_africa.png" />
+    <AndroidResource Include="Resources\drawable\south_georgia.png" />
+    <AndroidResource Include="Resources\drawable\south_korea.png" />
+    <AndroidResource Include="Resources\drawable\soviet_union.png" />
+    <AndroidResource Include="Resources\drawable\spain.png" />
+    <AndroidResource Include="Resources\drawable\sri_lanka.png" />
+    <AndroidResource Include="Resources\drawable\sudan.png" />
+    <AndroidResource Include="Resources\drawable\suriname.png" />
+    <AndroidResource Include="Resources\drawable\swaziland.png" />
+    <AndroidResource Include="Resources\drawable\sweden.png" />
+    <AndroidResource Include="Resources\drawable\switzerland.png" />
+    <AndroidResource Include="Resources\drawable\syria.png" />
+    <AndroidResource Include="Resources\drawable\taiwan.png" />
+    <AndroidResource Include="Resources\drawable\tajikistan.png" />
+    <AndroidResource Include="Resources\drawable\tanzania.png" />
+    <AndroidResource Include="Resources\drawable\thailand.png" />
+    <AndroidResource Include="Resources\drawable\tibet.png" />
+    <AndroidResource Include="Resources\drawable\timorleste.png" />
+    <AndroidResource Include="Resources\drawable\togo.png" />
+    <AndroidResource Include="Resources\drawable\tonga.png" />
+    <AndroidResource Include="Resources\drawable\top1.png" />
+    <AndroidResource Include="Resources\drawable\top2.png" />
+    <AndroidResource Include="Resources\drawable\top3.png" />
+    <AndroidResource Include="Resources\drawable\trinidad_and_tobago.png" />
+    <AndroidResource Include="Resources\drawable\tunisia.png" />
+    <AndroidResource Include="Resources\drawable\turkey.png" />
+    <AndroidResource Include="Resources\drawable\turkmenistan.png" />
+    <AndroidResource Include="Resources\drawable\turks_and_caicos_islands.png" />
+    <AndroidResource Include="Resources\drawable\tuvalu.png" />
+    <AndroidResource Include="Resources\drawable\uae.png" />
+    <AndroidResource Include="Resources\drawable\uganda.png" />
+    <AndroidResource Include="Resources\drawable\ukraine.png" />
+    <AndroidResource Include="Resources\drawable\united_kingdom.png" />
+    <AndroidResource Include="Resources\drawable\united_states_of_america.png" />
+    <AndroidResource Include="Resources\drawable\uruguay.png" />
+    <AndroidResource Include="Resources\drawable\us_virgin_islands.png" />
+    <AndroidResource Include="Resources\drawable\uzbekistan.png" />
+    <AndroidResource Include="Resources\drawable\vanuatu.png" />
+    <AndroidResource Include="Resources\drawable\vatican_city.png" />
+    <AndroidResource Include="Resources\drawable\venezuela.png" />
+    <AndroidResource Include="Resources\drawable\vietnam.png" />
+    <AndroidResource Include="Resources\drawable\wallis_and_futuna.png" />
+    <AndroidResource Include="Resources\drawable\yemen.png" />
+    <AndroidResource Include="Resources\drawable\zambia.png" />
+    <AndroidResource Include="Resources\drawable\zimbabwe.png" />
+    <AndroidResource Include="Resources\layout\Done.axml" />
+    <AndroidResource Include="Resources\layout\playing.xml" />
+    <AndroidResource Include="Resources\layout\playing_fragment.xml" />
+    <AndroidResource Include="Resources\layout\row.axml" />
+    <AndroidResource Include="Resources\drawable\highscore_icon.png" />
+    <AndroidResource Include="Resources\raw\bloop.wav" />
+    <AndroidResource Include="Resources\layout\setting.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\sound.png" />
+    <AndroidResource Include="Resources\drawable\problem.png" />
+    <AndroidResource Include="Resources\drawable\khoa.jpg" />
+    <AndroidResource Include="Resources\drawable\bg5.jpg" />
+    <AndroidResource Include="Resources\drawable\icon_quiz.png" />
+    <AndroidResource Include="Resources\mipmap-hdpi\icon_quiz.png" />
+    <AndroidResource Include="Resources\layout\activity_easy_playing.xml" />
+    <AndroidResource Include="Resources\layout\activity_level.xml" />
+    <AndroidResource Include="Resources\layout\activity_start.xml" />
+    <AndroidResource Include="Resources\drawable\cp.png" />
+    <AndroidResource Include="Resources\drawable\bugfix.png" />
+    <AndroidResource Include="Resources\drawable\bugreport.png" />
+    <AndroidResource Include="Resources\layout\report.xml" />
+    <AndroidResource Include="Resources\drawable\icon_sent.png" />
+    <AndroidResource Include="Resources\drawable\aboutus.png" />
+    <AndroidResource Include="Resources\drawable\apple.png" />
+    <AndroidResource Include="Resources\drawable\banana.png" />
+    <AndroidResource Include="Resources\drawable\berry.png" />
+    <AndroidResource Include="Resources\drawable\bird.png" />
+    <AndroidResource Include="Resources\drawable\cat.png" />
+    <AndroidResource Include="Resources\drawable\clound.png" />
+    <AndroidResource Include="Resources\drawable\cloundy.png" />
+    <AndroidResource Include="Resources\drawable\dog.png" />
+    <AndroidResource Include="Resources\drawable\doraemon.png" />
+    <AndroidResource Include="Resources\drawable\fan.png" />
+    <AndroidResource Include="Resources\drawable\flower.png" />
+    <AndroidResource Include="Resources\drawable\holi.png" />
+    <AndroidResource Include="Resources\drawable\horse.png" />
+    <AndroidResource Include="Resources\drawable\huan.jpeg" />
+    <AndroidResource Include="Resources\drawable\key.png" />
+    <AndroidResource Include="Resources\drawable\mango.png" />
+    <AndroidResource Include="Resources\drawable\snow.png" />
+    <AndroidResource Include="Resources\drawable\storm.png" />
+    <AndroidResource Include="Resources\drawable\table.png" />
+    <AndroidResource Include="Resources\drawable\tank.png" />
+    <AndroidResource Include="Resources\drawable\teacher.png" />
+    <AndroidResource Include="Resources\drawable\train.png" />
+    <AndroidResource Include="Resources\drawable\walpy.png" />
+    <AndroidResource Include="Resources\drawable\camera.png" />
+    <AndroidResource Include="Resources\layout\sentSMS.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\button_1.xml" />
+    <AndroidResource Include="Resources\drawable\button_2.xml" />
+    <AndroidResource Include="Resources\drawable\button_3.xml" />
+    <AndroidResource Include="Resources\drawable\button_4.xml" />
+    <AndroidResource Include="Resources\drawable\iq7.png" />
+    <AndroidResource Include="Resources\drawable\iq6.png" />
+    <AndroidResource Include="Resources\drawable\iq5.png" />
+    <AndroidResource Include="Resources\drawable\iq4.png" />
+    <AndroidResource Include="Resources\drawable\iq3.png" />
+    <AndroidResource Include="Resources\drawable\iq2.png" />
+    <AndroidResource Include="Resources\drawable\iq1.png" />
+    <AndroidResource Include="Resources\drawable\ic_favorite_white_24dp.xml" />
+    <AndroidResource Include="Resources\drawable\circle.xml" />
+    <AndroidResource Include="Resources\layout\youtube.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\score.xml" />
+    <AndroidResource Include="Resources\drawable\video.png" />
+    <AndroidResource Include="Resources\drawable\video1.png" />
+    <AndroidResource Include="Resources\drawable\study.png" />
+    <AndroidResource Include="Resources\menu\bottomnav.xml" />
+    <AndroidResource Include="Resources\layout\activityquiz.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\option_right.xml" />
+    <AndroidResource Include="Resources\drawable\option_unselected.xml" />
+    <AndroidResource Include="Resources\drawable\ic_question.xml" />
+    <AndroidResource Include="Resources\drawable\background_bottom.xml" />
+    <AndroidResource Include="Resources\drawable\rounded_box.xml" />
+    <AndroidResource Include="Resources\anim\slide_up.xml" />
+    <AndroidResource Include="Resources\anim\slide_right.xml" />
+    <AndroidResource Include="Resources\drawable\ic_share.xml" />
+    <AndroidResource Include="Resources\layout\calculator.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_sent.png" />
+    <AndroidResource Include="Resources\layout\List_Item.axml" />
+    <AndroidResource Include="Resources\drawable\ic_facebook.png" />
+    <AndroidResource Include="Resources\drawable\ic_google.png" />
+    <AndroidResource Include="Resources\drawable\bg_login.xml" />
+    <AndroidResource Include="Resources\drawable\textbox.xml" />
+    <AndroidResource Include="Resources\drawable\music.png" />
+    <AndroidResource Include="Resources\drawable\finger.png" />
+    <AndroidResource Include="Resources\layout\finger.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\raw\correct.mp3" />
+    <AndroidResource Include="Resources\raw\incorrect.mp3" />
+    <AndroidResource Include="Resources\raw\showtimer.mp3" />
+    <AndroidResource Include="Resources\drawable\iq17.jpg" />
+    <AndroidResource Include="Resources\drawable\iq16.jpg" />
+    <AndroidResource Include="Resources\drawable\iq15.jpg" />
+    <AndroidResource Include="Resources\drawable\iq14.jpg" />
+    <AndroidResource Include="Resources\drawable\iq13.jpg" />
+    <AndroidResource Include="Resources\drawable\iq12.jpg" />
+    <AndroidResource Include="Resources\drawable\iq11.jpg" />
+    <AndroidResource Include="Resources\drawable\iq10.jpg" />
+    <AndroidResource Include="Resources\drawable\iq9.jpg" />
+    <AndroidResource Include="Resources\drawable\iq8.jpg" />
+    <AndroidResource Include="Resources\drawable\ic_trophy.xml" />
+    <AndroidResource Include="Resources\drawable\pic_iq.png" />
+    <AndroidResource Include="Resources\layout\aboutpage.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\viewpager_study.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\viewpager_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Done2.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\intro_math.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\firebase.xml" />
+    <AndroidResource Include="Resources\drawable\ic_delete.png" />
+    <AndroidResource Include="Resources\layout\newEnglish.xml" />
+    <AndroidResource Include="Resources\drawable\alarm.png" />
+    <AndroidResource Include="Resources\drawable\ListReminder.axml" />
+    <AndroidResource Include="Resources\layout\edit_english.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\acitivity_study.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\arrow_bottom.png" />
+    <AndroidResource Include="Resources\drawable\arrow_left.png" />
+    <AndroidResource Include="Resources\drawable\arrow_right.png" />
+    <AndroidResource Include="Resources\drawable\backend.png" />
+    <AndroidResource Include="Resources\drawable\c1.png" />
+    <AndroidResource Include="Resources\drawable\c2.png" />
+    <AndroidResource Include="Resources\drawable\c3.png" />
+    <AndroidResource Include="Resources\drawable\c4.png" />
+    <AndroidResource Include="Resources\drawable\c5.png" />
+    <AndroidResource Include="Resources\drawable\cv1.png" />
+    <AndroidResource Include="Resources\drawable\cv2.png" />
+    <AndroidResource Include="Resources\drawable\cv3.png" />
+    <AndroidResource Include="Resources\drawable\cv4.png" />
+    <AndroidResource Include="Resources\drawable\cv5.png" />
+    <AndroidResource Include="Resources\drawable\cvbg.png" />
+    <AndroidResource Include="Resources\drawable\frontend.png" />
+    <AndroidResource Include="Resources\drawable\hbg.png" />
+    <AndroidResource Include="Resources\drawable\search_bg.png" />
+    <AndroidResource Include="Resources\drawable\search_img.png" />
+    <AndroidResource Include="Resources\layout\group_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\item_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_message.png" />
+    <AndroidResource Include="Resources\layout\include_list_viewpager.axml" />
+    <AndroidResource Include="Resources\layout\Expandable.axml" />
+    <AndroidResource Include="Resources\layout\ListGroup.axml" />
+    <AndroidResource Include="Resources\layout\Xamarin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AngularWebview.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\privacy.png" />
+    <AndroidResource Include="Resources\drawable\stupidguy.jpg" />
+    <AndroidResource Include="Resources\drawable\albert.jpg" />
+    <AndroidResource Include="Resources\layout\English_Category.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\animal.png" />
+    <AndroidResource Include="Resources\drawable\writer.png" />
+    <AndroidResource Include="Resources\layout\writer.png" />
+    <AndroidResource Include="Resources\drawable\cominicate.png" />
+    <AndroidResource Include="Resources\drawable\book.png" />
+    <AndroidResource Include="Resources\layout\addnewword.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\signout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\xamarin.png" />
+    <AndroidResource Include="Resources\layout\AngularRow.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\index.png" />
+    <AndroidResource Include="Resources\drawable\interview.png" />
+    <AndroidResource Include="Resources\layout\addxamarin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\detailxamarin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\interview.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\education.jpg" />
+    <AndroidResource Include="Resources\layout\helpcenter.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\askQuestion.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\QuestionRow.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\question2.png" />
+    <AndroidResource Include="Resources\drawable\ic_score.png" />
+    <AndroidResource Include="Resources\drawable\ic_quizz.png" />
+    <AndroidResource Include="Resources\layout\usercontribute.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\profile2.png" />
+    <AndroidResource Include="Resources\layout\EnglishRow.xml" />
+    <AndroidResource Include="Resources\layout\detailQuestion.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\light.png" />
+    <AndroidResource Include="Resources\layout\activity_privacy_policy.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\search1.png" />
+    <AndroidResource Include="Resources\drawable\menu1.png" />
+    <AndroidResource Include="Resources\drawable\ic_play.png" />
+    <AndroidResource Include="Resources\drawable\timer.png" />
+    <AndroidResource Include="Resources\drawable\notify.png" />
+    <AndroidResource Include="Resources\layout\ranking_fragment.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\user_ranking_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ranking.png" />
+    <AndroidResource Include="Resources\layout\activity_tip.xml" />
+    <AndroidResource Include="Resources\layout\HeaderCustomLayout.xml" />
+    <AndroidResource Include="Resources\layout\ListItemCustomLayout.xml" />
+    <AndroidResource Include="Resources\drawable\computericon_one.png" />
+    <AndroidResource Include="Resources\drawable\down_arrow_one.png" />
+    <AndroidResource Include="Resources\drawable\group_indicator.xml" />
+    <AndroidResource Include="Resources\drawable\up_arrow_one.png" />
+    <AndroidResource Include="Resources\layout\rankingIQ.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\rankingXamarin.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\xamarinranking.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\flagranking.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\aboutApp.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\welcomebackBottomSheet.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\sanh2.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\splashscreen1.jpg" />
+    <AndroidResource Include="Resources\layout\howtoplaybottomsheet.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ExpandableView.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\QuestionQuizz.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\questionIQ_listview_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\AddQuestionQuizz.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\cameraText.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_floatingbutton.png" />
+    <AndroidResource Include="Resources\drawable\ic_process.png" />
+    <AndroidResource Include="Resources\xml\file_paths.xml" />
+    <AndroidResource Include="Resources\layout\ScanText.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\scan.png" />
+    <AndroidResource Include="Resources\drawable\calculator.png" />
+    <AndroidResource Include="Resources\layout\contentScanText_listview_item.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\ContentScanText.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\power_off.png" />
+    <AndroidResource Include="Resources\drawable\power_on.png" />
+    <AndroidResource Include="Resources\raw\sound_click.wav" />
+    <AndroidResource Include="Resources\layout\addTasks.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\deleteTasks.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\UpdateTask.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\mainTasks.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\takeNote.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\NoteItems.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\detailNotes.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\profile.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\button_login.xml" />
+    <AndroidResource Include="Resources\drawable\main_top.png" />
+    <AndroidResource Include="Resources\drawable\sign.xml" />
+    <AndroidResource Include="Resources\layout\addNotes.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_pass.png" />
+    <AndroidResource Include="Resources\drawable\coding1.jpg" />
+    <AndroidResource Include="Resources\drawable\basic_comunication.jpg" />
+    <AndroidResource Include="Resources\drawable\OOP_Interview.png" />
+    <AndroidResource Include="Resources\drawable\OOP_Interview.jpg" />
+    <AndroidResource Include="Resources\layout\TipInterviewItem.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\TipInterview.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\coding3.jpg" />
+    <AndroidResource Include="Resources\layout\xamarininterview.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\copy.png" />
+    <AndroidResource Include="Resources\layout\EnglishComunication.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\CurvedBottom.xml" />
+    <AndroidResource Include="Resources\menu\Curvedbottomnav.xml" />
+    <AndroidResource Include="Resources\layout\FavoriteWordRow.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\oclock.png" />
+    <AndroidResource Include="Resources\drawable\MAUI.jpg" />
+    <AndroidResource Include="Resources\drawable\video4.jpg" />
+    <AndroidResource Include="Resources\layout\support_fragment.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\Notification_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\drawable\ic_forum.png" />
+    <AndroidResource Include="Resources\drawable\curvededges.xml" />
+    <AndroidResource Include="Resources\drawable\curvededges_blue.xml" />
+    <AndroidResource Include="Resources\drawable\curvededges_white.xml" />
+    <AndroidResource Include="Resources\drawable\like.png" />
+    <AndroidResource Include="Resources\drawable\outline_arrowback.xml" />
+    <AndroidResource Include="Resources\drawable\placeholder.png" />
+    <AndroidResource Include="Resources\drawable\redlike.png" />
+    <AndroidResource Include="Resources\layout\forum_layout.xml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\create_post.axml" />
+    <AndroidResource Include="Resources\layout\editpost.axml" />
+    <AndroidResource Include="Resources\layout\post.axml" />
+    <AndroidResource Include="Resources\drawable\photo.png" />
+    <AndroidResource Include="Resources\drawable\comment.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties XamarinHotReloadGenericExceptionInfoBarProject1HideInfoBar="True" XamarinHotReloadDebuggerTimeoutExceptionProject1HideInfoBar="True" />
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+    Other similar extension points exist, see Microsoft.Common.targets.
+    <Target Name="BeforeBuild">
+    </Target>
+    <Target Name="AfterBuild">
+    </Target>
+  -->
+</Project>

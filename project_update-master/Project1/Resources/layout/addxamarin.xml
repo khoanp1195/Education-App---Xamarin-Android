@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+     <LinearLayout
+          android:orientation="vertical"
+          android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/toolbar1"
+                   android:background="?android:attr/colorPrimary"
+        android:minHeight="?android:attr/actionBarSize"
+         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        android:elevation="4dp"    >
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:text="Add English Word"
+                android:textStyle="bold"
+                android:fontFamily="@font/doan"
+                android:textColor="#fff"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+
+            <ImageView
+                android:id="@+id/backButton"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/back2"
+                android:tint="#fff"
+                android:layout_marginLeft="10dp"
+                android:layout_width="40dp"
+                android:layout_height="40dp"/>
+
+     
+         
+
+
+        </RelativeLayout>
+
+     </android.support.v7.widget.Toolbar>
+   
+        
+     
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:minHeight="90dp"
+        android:id="@+id/cardView1"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:padding="16dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/nameText"
+			>
+                    <EditText
+                        android:hint="Name: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                        <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/numberText"
+			>
+                    <EditText
+                        android:hint="Number: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                            android:inputType="number"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                   
+
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title1Text"
+			>
+                    <EditText
+                        android:hint="Title 1: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content1Text"
+			>
+                    <EditText
+                        android:hint="Content 1: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                    
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title2Text"
+			>
+                    <EditText
+                        android:hint="Title 2: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content2Text"
+			>
+                    <EditText
+                        android:hint="Content 2: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                    
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title3Text"
+			>
+                    <EditText
+                        android:hint="Title 3: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content3Text"
+			>
+                    <EditText
+                        android:hint="Content 3: "
+                        android:layout_height="130dp"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+                
+                    
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title4Text"
+			>
+                    <EditText
+                        android:hint="Title 4: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                    
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/contetn4Text"
+			>
+                    <EditText
+                        android:hint="Content 4: "
+                        android:layout_height="130dp"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                    
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title5Text"
+			>
+                    <EditText
+                        android:hint="Title 5: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+
+                    
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content5Text"
+			>
+                    <EditText
+                        android:hint="Content 5: "
+                        android:layout_height="130dp"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+             
+
+                    
+                    
+                <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/title6Text"
+			>
+                    <EditText
+                        android:hint="Title 6: "
+                        android:layout_height="wrap_content"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+                    
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/content6Text"
+			>
+                    <EditText
+                        android:hint="Content 6: "
+                        android:layout_height="130dp"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                        
+                   <android.support.design.widget.TextInputLayout
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:id="@+id/categoryText"
+			>
+                    <EditText
+                        android:hint="Category: "
+                        android:layout_height="130dp"
+                        android:layout_width="match_parent"
+                        android:textSize="18sp"
+                        android:imeOptions="actionNext"
+			/>
+
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                      <fr.ganfra.materialspinner.MaterialSpinner
+                    android:id="@+id/statusSpinner"
+                    app:ms_enableFloatingLabel="true"
+                    app:ms_floatingLabelText="Select Level"
+                    app:ms_hint="Category"
+                    app:ms_alignLabels="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:ignore="XmlNamespace" />
+
+
+                
+            </LinearLayout>
+<Button
+                    android:text="Submit"
+                    android:id="@+id/submitBtn"
+                    android:background="@drawable/button_2"
+                    android:textColor="#fff"
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"/>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+     </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

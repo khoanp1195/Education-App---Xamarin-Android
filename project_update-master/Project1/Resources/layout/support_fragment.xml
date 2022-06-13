@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background1"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            app:lottie_rawRes="@raw/help"
+
+
+
+            app:lottie_loop="true"
+
+            app:lottie_autoPlay="true"
+            android:layout_height="250dp"/>
+
+        <TextView
+            android:text="1.How can I access the application"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlue"
+            android:text="To access the application requires the user to use a real email address. This helps users when logging in to the system to receive a valid email address.
+		If the user does not use the correct email address or does not exist, the system will not be able to send the authentication information to the user's email address, which will prevent the user from accessing the application."
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="2.After email verification"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="When the user Clicks the Send Email Verification button, the system will send the authentication information to the user's Email. Now the user performs Check Email to authenticate. After authentication requires the user to log out of the system and log back in to be able to access and use the application's services."
+
+            android:textColor="@color/colorBlue"
+
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+        <TextView
+            android:text="3. Access the application successfully"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="When accessing the main page of the application, the application will now ask the user to allow the application to access some permissions. Users should allow the application to access those permissions, this helps users have a better experience when using the application."
+
+            android:textColor="@color/colorBlue"
+
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:text="4. Serious Studying Member"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/orange"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:text="Become a serious study member by revising every day. Avoid excessive spam behavior. Spam behavior will be warned twice by the administrator. After 2 reports, the member will be locked out of the account."
+
+            android:textColor="@color/colorBlue"
+
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+    </LinearLayout>
+
+
+
+</androidx.core.widget.NestedScrollView>

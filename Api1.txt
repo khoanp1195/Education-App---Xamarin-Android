@@ -1,0 +1,248 @@
+#region table data source user
+        private class users_TableSource : UITableViewSource
+        {
+            List<BeanUser> lst_user;
+            NSString cellIdentifier = new NSString("cell");
+            ListUserView parentView;
+
+            public users_TableSource(List<BeanUser> _user, ListUserView _parentview)
+            {
+                parentView = _parentview;
+                if (_user != null)
+                {
+                    lst_user = _user;
+                }
+            }
+
+            public override nint RowsInSection(UITableView tableview, nint section)
+            {
+                return lst_user.Count;
+            }
+
+            public override nfloat GetHeightForRow(UITableView tableView, NSIndexPath indexPath)
+            {
+                return 60;
+            }
+
+            public override void RowSelected(UITableView tableView, NSIndexPath indexPath)
+            {
+                var item = lst_user[indexPath.Row];
+                parentView.HandleSeclectItem(item, indexPath);
+                tableView.DeselectRow(indexPath, true);
+            }
+
+            public override UITableViewCell GetCell(UITableView tableView, NSIndexPath indexPath)
+            {
+                user_cell_custom cell = new user_cell_custom(cellIdentifier);
+                var user = lst_user[indexPath.Row];
+
+                cell.UpdateCell(user);
+                return cell;
+            }
+        }
+        private class user_cell_custom : UITableViewCell
+        {
+            string localDocumentFilepath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
+            UIImageView imgAvatar;
+            UILabel lbl_imgCover, lbl_name, lbl_email;
+            UILabel line;
+
+            public user_cell_custom(NSString cellID) : base(UITableViewCellStyle.Default, cellID)
+            {
+                viewConfiguration();
+            }
+            private void viewConfiguration()
+            {
+                
+                imgAvatar = new UIImageView();
+                imgAvatar.ContentMode = UIViewContentMode.ScaleAspectFill;
+                imgAvatar.Layer.CornerRadius = 18;
+                imgAvatar.ClipsToBounds = true;
+                imgAvatar.Hidden = true;
+
+                lbl_imgCover = new UILabel
+                {
+                    TextAlignment = UITextAlignment.Center,
+                    Font = UIFont.SystemFontOfSize(13, UIFontWeight.Regular),
+                    BackgroundColor = UIColor.Blue,
+                    TextColor = UIColor.White
+                };
+
+                lbl_imgCover.Layer.CornerRadius = 18;
+                lbl_imgCover.ClipsToBounds = true;
+
+                lbl_name = new UILabel()
+                {
+                    Font = UIFont.SystemFontOfSize(12, UIFontWeight.Semibold),
+                    TextColor = UIColor.FromRGB(51, 51, 51),
+                    TextAlignment = UITextAlignment.Left,
+                    BackgroundColor = UIColor.Clear
+                };
+
+                lbl_email = new UILabel()
+                {
+                    Font = UIFont.SystemFontOfSize(12, UIFontWeight.Light),
+                    TextColor = UIColor.FromRGB(51, 51, 51),
+                    TextAlignment = UITextAlignment.Left,
+                    BackgroundColor = UIColor.Clear
+                };
+
+                line = new UILabel()
+                {
+                    BackgroundColor = UIColor.LightGray.ColorWithAlpha(0.5f)
+                };
+
+                ContentView.AddSubviews(new UIView[] { imgAvatar, lbl_imgCover, lbl_name, lbl_email, line });
+            }
+
+            public void UpdateCell(BeanUser user)
+            {
+                if (user.IsSelected)
+                    Accessory = UITableViewCellAccessory.Checkmark;
+                else
+                    Accessory = UITableViewCellAccessory.None;
+
+                if (string.IsNullOrEmpty(user.ImagePath))
+                {
+                    if (!string.IsNullOrEmpty(user.FullName))
+                    {
+                        lbl_imgCover.Hidden = false;
+                        imgAvatar.Hidden = true;
+                        lbl_imgCover.Text = CmmFunction.GetAvatarName(user.FullName);
+                        lbl_imgCover.BackgroundColor = ExtensionMethods.ToUIColor(CmmIOSFunction.GetDynamicColorAvatar(lbl_imgCover.Text));
+                    }
+                }
+                else
+                {
+                    checkFileLocalIsExist(user, imgAvatar);
+                    lbl_imgCover.Hidden = true;
+                }
+
+                lbl_name.Text = user.FullName;
+                lbl_email.Text = user.Email;
+            }
+
+            public override void LayoutSubviews()
+            {
+                base.LayoutSubviews();
+                imgAvatar.Frame = new CGRect(10, 15, 36, 36);
+                lbl_imgCover.Frame = new CGRect(10, 15, 36, 36);
+                lbl_name.Frame = new CGRect(lbl_imgCover.Frame.Right + 5, 8, this.ContentView.Frame.Width - 80, 25);
+                lbl_email.Frame = new CGRect(lbl_imgCover.Frame.Right + 5, lbl_name.Frame.Bottom, 400, 20);
+                line.Frame = new CGRect(lbl_name.Frame.X, ContentView.Frame.Bottom - 0.5, ContentView.Frame.Width - lbl_name.Frame.X, 0.5);
+            }
+
+            private async void checkFileLocalIsExist(BeanUser contact, UIImageView image_view)
+            {
+                try
+                {
+                    string filename = contact.ImagePath.Split('/').Last();
+                    string filepathURL = CmmVariable.M_Domain + "/" + CmmVariable.SysConfig.Subsite + contact.ImagePath;
+                    string localfilePath = Path.Combine(localDocumentFilepath, filename);
+
+                    if (!File.Exists(localfilePath))
+                    {
+                        UIImage avatar = null;
+                        await Task.Run(() =>
+                        {
+                            ProviderBase provider = new ProviderBase();
+                            if (provider.DownloadFile(filepathURL, localfilePath, CmmVariable.M_AuthenticatedHttpClient))
+                            {
+                                NSData data = NSData.FromUrl(new NSUrl(localfilePath, false));
+
+                                InvokeOnMainThread(() =>
+                                {
+                                    if (data != null)
+                                    {
+                                        UIImage image = UIImage.LoadFromData(data);
+                                        if (image != null)
+                                        {
+                                            avatar = CmmIOSFunction.MaxResizeImage(image, 200, 200);
+                                            image_view.Image = avatar;
+                                        }
+                                        else
+                                            image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+                                    }
+                                    else
+                                        image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+
+                                    imgAvatar.Hidden = false;
+                                });
+
+                                if (data != null && avatar != null)
+                                {
+                                    NSError err = null;
+                                    NSData imgData = avatar.AsPNG();
+                                    if (imgData.Save(localfilePath, false, out err))
+                                        Console.WriteLine("saved as " + localfilePath);
+                                    return;
+                                }
+                            }
+                            else
+                            {
+                                InvokeOnMainThread(() =>
+                                {
+                                    image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+                                    imgAvatar.Hidden = false;
+                                });
+                            }
+                        });
+                    }
+                    else
+                    {
+                        openFile(filename, image_view);
+                        imgAvatar.Hidden = false;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+                    Console.WriteLine("ListUserView - checkFileLocalIsExist - Err: " + ex.ToString());
+                    //CmmIOSFunction.IOSlog(null, "PopupContactDetailView - loadAvatar - " + ex.ToString());
+                }
+            }
+
+            private async void openFile(string localfilename, UIImageView image_view)
+            {
+                try
+                {
+                    NSData data = null;
+                    await Task.Run(() =>
+                    {
+                        string localfilePath = Path.Combine(localDocumentFilepath, localfilename);
+                        data = NSData.FromUrl(new NSUrl(localfilePath, false));
+                    });
+
+                    if (data != null)
+                    {
+                        UIImage image = UIImage.LoadFromData(data);
+                        if (image != null)
+                        {
+                            image_view.Image = image;
+                        }
+                        else
+                        {
+                            image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+                        }
+                    }
+                    else
+                    {
+                        image_view.Image = UIImage.FromFile("Icons/icon_avatar32.png");
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("ContactView - openFile - Err: " + ex.ToString());
+                }
+            }
+
+            private int HighlightKeySearch(string _keyWord, BeanUser contact)
+            {
+                var indexA = contact.FullName.IndexOf(_keyWord);
+
+                return indexA;
+            }
+        }
+
+        #endregion

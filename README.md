@@ -47,3 +47,5 @@
 
 •	Quản lý câu hỏi trên trang home của người dùng: Xóa câu hỏi.
  
+https://mega.nz/file/PvJQWBgI#eytz9WTwJs102kDKdMn5ZndfwnnII-AKXOI4OMSXAvY
+.

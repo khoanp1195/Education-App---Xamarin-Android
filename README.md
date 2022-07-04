@@ -51,13 +51,23 @@ https://mega.nz/file/PvJQWBgI#eytz9WTwJs102kDKdMn5ZndfwnnII-AKXOI4OMSXAvY
 .
 
 Camera and Microphone in WKWebView:
+
 https://msolarana.netlify.app/2021/01/01/camera-and-microphone-in-wkwebview/
+
 Does iOS 11 WKWebView support WebRTC ?
+
 https://developer.apple.com/forums/thread/88052
+
 Access Device Camera From WKWebView Doesn't Start?
+
 https://tutorialmeta.com/question/access-device-camera-from-wkwebview-doesnt-start
+
 WKWebView does not allow camera access in application
+
 https://stackoverflow.com/questions/56646575/wkwebview-does-not-allow-camera-access-in-application
+
 Xamarin iOS WkWebViewRenderer displaying "X Would Like To Use Your Current Location" each time
+
 https://stackoverflow.com/questions/67813089/xamarin-ios-wkwebviewrenderer-displaying-x-would-like-to-use-your-current-locat
+
 
